@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Study Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <div class="top-bar">
+
+                <div>
+                    <h1>🎓 Student Study Planner</h1>
+                    <p>Plan • Study • Track • Achieve 🚀</p>
+                </div>
+
+                <button id="themeBtn">
+                    🌙
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- Add Task -->
+
+        <section class="task-form">
+
+            <h2>Add Study Task</h2>
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter study task..."
+            >
+
+            <input
+                type="text"
+                id="subjectInput"
+                placeholder="Enter subject..."
+            >
+
+            <input
+                type="date"
+                id="dateInput"
+            >
+
+            <button id="addTaskBtn">
+                ➕ Add Task
+            </button>
+
+        </section>
+
+
+        <!-- Progress -->
+
+        <section class="progress-section">
+
+            <h2>📊 Today's Progress</h2>
+
+            <div class="progress-bar">
+
+                <div id="progress"></div>
+
+            </div>
+
+            <p id="progressText">
+                0% Completed
+            </p>
+
+        </section>
+
+
+        <!-- Task List -->
+
+        <section class="task-section">
+
+            <h2>📚 My Study Tasks</h2>
+
+
+            <!-- Search -->
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search your tasks..."
+            >
+
+
+            <!-- Filters -->
+
+            <div class="filter-buttons">
+
+                <button
+                    class="filter-btn active"
+                    id="allBtn">
+                    All
+                </button>
+
+                <button
+                    class="filter-btn"
+                    id="pendingBtn">
+                    Pending
+                </button>
+
+                <button
+                    class="filter-btn"
+                    id="completedBtn">
+                    Completed
+                </button>
+
+            </div>
+
+
+            <!-- Task List -->
+
+            <div id="taskList">
+
+                <!-- Tasks appear here -->
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
